@@ -20,9 +20,8 @@ xhttp.onreadystatechange = function() {
      let textData=
      "<div class='show-title'>"+show.title+"</div>"+
      "<span>"+
-     "Publisher:" +show.publisher+"<br>"+
+     "Director:" +show.director+"<br>"+
        "Genre:" +show.genre+"<br>"+
-       "Seasons:" +show.seasons+"<br>"+
        "Status:" +show.status+"<br>"+
        "Rating:" +show.rating+"<br>"+
      "</span>";

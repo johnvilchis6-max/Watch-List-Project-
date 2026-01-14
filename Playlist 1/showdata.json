@@ -1,5 +1,18 @@
 [
-    {
-          
-    }
+{
+    "Title": "The Godfather",
+    "director":"Francis Ford Coppola",
+    "genre": "Crime",
+    "year": 1972,
+    "rating":9.2 
+
+},
+{
+    "Title": "The Shawshank Redemption",
+    "director":"Frank Darabont",
+    "genre": "Crime",
+    "year": 1972,
+    "rating":9.2 
+
+}
 ]
