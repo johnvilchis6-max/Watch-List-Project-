@@ -4,72 +4,66 @@
     "director":"Francis Ford Coppola",
     "genre": "Crime",
     "year": 1972,
-    "rating":9.2 
+    "rating":9.2,
+    "imgSrc":"https://www.imdb.com/title/tt0068646/"
 
  },
- {
-    "Title": "The Shawshank Redemption",
-    "director":"Frank Darabont",
-    "genre": "Crime",
-    "year": 1972,
-    "rating":9.2 
 
-  },
-  { 
-    "Title": "The Godfather",
-    "director": "Francis Ford Coppola",
-    "genre": "Crime",
-    "year": 1972,
-    "rating": 9.2
-  },
   {
     "Title": "The Shawshank Redemption",
     "director": "Frank Darabont",
     "genre": "Drama",
     "year": 1994,
-    "rating": 9.3
+    "rating": 9.3,
+    "imgSrc":"https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
   },
   {
     "Title": "The Dark Knight",
     "director": "Christopher Nolan",
     "genre": "Action",
     "year": 2008,
-    "rating": 9.0
+    "rating": 9.0,
+    "imgSrc":"https://www.amazon.com/Trends-International-Knight-Poster-22-375/dp/B072B8KZZW"
   },
   {
     "Title": "The Godfather Part II",
     "director": "Francis Ford Coppola",
     "genre": "Crime",
     "year": 1974,
-    "rating": 9.0
+    "rating": 9.0,
+    "imgSrc":"https://www.tvinsider.com/show/the-godfather-part-ii/"
   },
   {
     "Title": "12 Angry Men",
     "director": "Sidney Lumet",
     "genre": "Drama",
     "year": 1957,
-    "rating": 9.0
+    "rating": 9.0,
+    "imgSrc": "https://letterboxd.com/film/12-angry-men/"
   },
   {
     "Title": "Schindler's List",
     "director": "Steven Spielberg",
     "genre": "Biography",
     "year": 1993,
-    "rating": 9.0
+    "rating": 9.0,
+    "imgSrc":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPmBf8GFMR36VJtjfz-DB90P9fkANw6hznA&s"
   },
   {
     "Title": "The Lord of the Rings: The Return of the King",
     "director": "Peter Jackson",
     "genre": "Fantasy",
     "year": 2003,
-    "rating": 9.0
+    "rating": 9.0,
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Rotkboxart2.jpg/250px-Rotkboxart2.jpg "
   },
   {
     "Title": "Pulp Fiction",
     "director": "Quentin Tarantino",
     "genre": "Crime",
     "year": 1994,
-    "rating": 8.9
+    "rating": 8.9,
+    "imgSrc":
   },
   {
     "Title": "The Lord of the Rings: The Fellowship of the Ring",
