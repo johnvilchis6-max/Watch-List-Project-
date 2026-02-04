@@ -10,7 +10,7 @@ xhttp.onreadystatechange = function() {
  if (this.readyState == 4 && this.status == 200) {
    data = JSON.parse(xhttp.responseText);
    console.log(data);
- 
+   localStorage.setItem("data",JSON.stringify(data)); 
    data.forEach(function(show) {
      let card = document.createElement("div");
   
@@ -41,6 +41,5 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET","gamedate.json",true);
 xhttp.send();
-
 
 
