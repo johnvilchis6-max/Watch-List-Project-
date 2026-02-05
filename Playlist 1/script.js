@@ -1,7 +1,8 @@
-console.log("js console");
+
+document.addEventListener("DOMContentLoaded", function (){});
 
 
-let data;
+  let data;
 let grid = document.querySelector(".grid-container");
 
 
@@ -20,9 +21,10 @@ xhttp.onreadystatechange = function() {
      let textData=
      "<div class='show-title'>"+show.title+"</div>"+
      "<span>"+
-     "Director:" +show.director+"<br>"+
+     "Title:" +show.title+"<br>"
+     "Cast:" +show.cast+"<br>"+
        "Genre:" +show.genre+"<br>"+
-       "Status:" +show.status+"<br>"+
+       "Year:" +show.year+"<br>"+
        "Rating:" +show.rating+"<br>"+
      "</span>";
 
@@ -41,5 +43,3 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET","gamedate.json",true);
 xhttp.send();
-
-
