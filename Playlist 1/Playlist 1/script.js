@@ -1,45 +1,58 @@
+
 console.log("js console");
 
+let data = [];
+const STORAGE_KEY = "watchlistData";
 
-let data;
-let grid = document.querySelector(".grid-container");
+document.addEventListener("DOMContentLoaded", function () {
+  const grid = document.querySelector(".grid-container");
 
+  const saved = localStorage.getItem(STORAGE_KEY);
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
- if (this.readyState == 4 && this.status == 200) {
-   data = JSON.parse(xhttp.responseText);
-   console.log(data);
-   localStorage.setItem("data",JSON.stringify(data)); 
-   data.forEach(function(show) {
-     let card = document.createElement("div");
-  
-     card.classList.add("card");
-
-
-     let textData=
-     "<div class='show-title'>"+show.title+"</div>"+
-     "<span>"+
-     "Director:" +show.director+"<br>"+
-       "Genre:" +show.genre+"<br>"+
-       "Status:" +show.status+"<br>"+
-       "Rating:" +show.rating+"<br>"+
-     "</span>";
-
-
-     card.innerHTML = textData;
+  if (saved) {
+    data = JSON.parse(saved);
+    displayData(data, grid);
+  } else {
    
-     if(show.imgSrc) {
-       card.style.backgroundImage = "url('"+show.imgSrc+"')";
-     }
+    loadJSON(grid);
+  }
+});
+
+function loadJSON(grid) {
+  let xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState === 4 && xhttp.status === 200) {
+      data = JSON.parse(xhttp.responseText);
+
   
-       grid.appendChild(card);
- });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 
+      displayData(data, grid);
+    }
+  };
 
- }
-};
-xhttp.open("GET","gamedate.json",true);
-xhttp.send();
+  xhttp.open("GET", "showdata.json", true);
+  xhttp.send();
+}
 
+function displayData(list, grid) {
+  grid.innerHTML = "";
+
+  for (let i = 0; i < list.length; i++) {
+    let show = list[i];
+
+    let cardHTML =
+      "<div class='card'>" +
+        "<h3 class='show-title'>" + show.title + "</h3>" +
+        "<p>Director: " + show.director + "</p>" +
+        "<p>Genre: " + show.genre + "</p>" +
+        "<p>Status: " + show.status + "</p>" +
+        "<p>Year: " + show.year + "</p>" +
+        "<p>Rating: " + show.rating + "</p>" +
+      "</div>";
+
+    grid.innerHTML += cardHTML;
+  }
+}
 
