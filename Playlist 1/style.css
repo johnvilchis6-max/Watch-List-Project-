@@ -1,3 +1,9 @@
+body{
+  
+  background-color: #28b131;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6,11 +12,21 @@
 }
 
 .card {
-  background-color: #12dad7;
-  border: 1px solid #ddd;
+  background-color: #ffffff; 
   border-radius: 5px;
   padding: 15px;
   text-align: center;
-  background-size: cover;
-  background-position: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+ .card:hover {
+  transform: scale(1.02);
+}
+
+.show-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1{
+  color:#ffffff
 }
