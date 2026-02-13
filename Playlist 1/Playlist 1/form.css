@@ -1,0 +1,42 @@
+form.watchlistForm {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(67, 41, 132, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+
+form.watchlistForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+form.watchlistForm input[type="text"],
+form.watchlistForm input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+form.watchlistForm button {
+    background-color: #a03f39b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+form.watchlistForm button:hover { 
+    background-color: #8a3230;
+} 

@@ -50,6 +50,7 @@ function displayData(list, grid) {
         "<p>Status: " + show.status + "</p>" +
         "<p>Year: " + show.year + "</p>" +
         "<p>Rating: " + show.rating + "</p>" +
+        "<p>Images:" +show.Images + "</p>" +
       "</div>";
 
     grid.innerHTML += cardHTML;

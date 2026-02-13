@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    
+    
+</head>
+
+<body>
+  <h1>Add Movies:</h1>
+
+ <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./form.html">Form</a></li>
+      
+  </ul>
+</head>
+<body>
+        <form id="watchlistForm" class="watchlistForm">
+<div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <div>
+            <label for="releaseDate">Release Date:</label>
+            <input type="number" id="releaseDate" name="releaseDate" required>
+        </div>
+
+        <div>
+            <label for="publisher">Publisher:</label>
+            <input type="text" id="publisher" name="publisher" required>
+        </div>
+
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+        </div>
+
+        <div>
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="planned">Planned</option>
+            </select>
+        </div>
+
+        <button type="submit">Add to Watchlist</button>
+    </form>
+
+
+        <script src="script.js"></script>
+        <script src="form.js"></script>
+</body>
