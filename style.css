@@ -1,0 +1,111 @@
+
+body{
+  background-color: #111;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+
+h1{
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  background-color: #222;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.show-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+form {
+  background: #ffffff;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: black;
+}
+
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #333;
+}

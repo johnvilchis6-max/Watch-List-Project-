@@ -1,0 +1,76 @@
+form {
+  background: #ffffff;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  background-color: #222;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar li a:hover {
+  background-color: #444;
+}
